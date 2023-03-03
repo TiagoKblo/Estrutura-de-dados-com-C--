@@ -2,7 +2,6 @@
 #include <locale.h>
 int main()
 {
-	
 	setlocale(LC_ALL,"");
 	float nota1, nota2, media;
 	printf("Entre com a nota 1: ");
