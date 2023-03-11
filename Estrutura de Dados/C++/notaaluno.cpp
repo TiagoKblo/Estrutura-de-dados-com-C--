@@ -21,6 +21,5 @@ int main() {
         printf("Você foi reprovado por nota e frequência.\n");
     }
 
-    return 0;
 }
 

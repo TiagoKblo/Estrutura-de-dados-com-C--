@@ -4,8 +4,8 @@
 int main() {
 	setlocale(LC_ALL,"");
     float salario_base, salario_final, acumulasalario=0;
-    int pontos, cont=0;
-    while(cont < 5){
+    int pontos;
+    for(int cont =0; cont < 5; cont++) {
 
 	    printf("Digite o salário base do funcionário: ");
 	    scanf("%f", &salario_base);
@@ -26,10 +26,10 @@ int main() {
 	    
 	    }
 		printf("O salário final do funcionário é: %.2f\n", salario_final);
-	    cont++;
+	    
 	    acumulasalario = acumulasalario + salario_final;
 	    
-}
+} 
 	printf("O salário médio é: %.2f\n", acumulasalario/cont);
 }
 

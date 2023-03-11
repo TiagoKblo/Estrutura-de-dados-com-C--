@@ -9,7 +9,7 @@ int main()
 	printf("Digite a quantidade de Reais a ser convertida: ");
     scanf("%f", &real);
 
-    dolar = real / 5.15; // taxa de câmbio do dia 03/03/2023
+    dolar = real / 5.15;
     euro = real / 5.73;
     libra = real / 7.01;
     peso = real / 0.057;
