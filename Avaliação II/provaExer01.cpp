@@ -20,11 +20,11 @@ void inserirInicio() {
     printf("RA: ");
     scanf("%d", &novo->RA);
     printf("Nome: ");
-    scanf(" %[^\n]", novo->nome);
+    scanf("%d", novo->nome);
     printf("E-mail: ");
-    scanf(" %[^\n]", novo->email);
+    scanf("%d", novo->email);
     printf("Celular: ");
-    scanf(" %[^\n]", novo->celular);
+    scanf("%d", novo->celular);
     
     novo->prox = NULL;
     
@@ -35,7 +35,7 @@ void inserirInicio() {
         inicio = novo;
     }
     
-    printf("Aluno inserido no inÌcio da lista.\n");
+    printf("Aluno inserido no in√≠cio da lista.\n");
 }
 
 void inserirFinal() {
@@ -45,11 +45,11 @@ void inserirFinal() {
     printf("RA: ");
     scanf("%d", &novo->RA);
     printf("Nome: ");
-    scanf(" %[^\n]", novo->nome);
+    scanf("%d", novo->nome);
     printf("E-mail: ");
-    scanf(" %[^\n]", novo->email);
+    scanf("%d", novo->email);
     printf("Celular: ");
-    scanf(" %[^\n]", novo->celular);
+    scanf("%d", novo->celular);
     
     novo->prox = NULL;
     
@@ -88,7 +88,7 @@ void removerAluno(int RA) {
         atual = atual->prox;
     }
     
-    printf("Aluno n„o encontrado.\n");
+    printf("Aluno n√£o encontrado.\n");
 }
 
 void buscarAluno(int RA) {
@@ -102,11 +102,10 @@ void buscarAluno(int RA) {
             printf("Celular: %s\n", atual->celular);
             return;
         }
-        
         atual = atual->prox;
     }
     
-    printf("Aluno n„o encontrado.\n");
+    printf("Aluno n√£o encontrado.\n");
 }
 
 void imprimirLista() {
@@ -128,13 +127,13 @@ int main() {
     
     while (1) {
         printf("\nLista de Alunos\n");
-        printf("1. Inserir Aluno no InÌcio\n");
+        printf("1. Inserir Aluno no In√≠cio\n");
         printf("2. Inserir Aluno no Final\n");
         printf("3. Remover Aluno\n");
         printf("4. Buscar Aluno\n");
         printf("5. Imprimir Lista de Alunos\n");
         printf("6. Sair\n");
-        printf("Entre com a opÁ„o: ");
+        printf("Entre com a op√ß√£o: ");
         scanf("%d", &opcao);
         
         switch (opcao) {
@@ -160,7 +159,7 @@ int main() {
             case 6:
                 exit(0);
             default:
-                printf("OpÁ„o inv·lida.\n");
+                printf("Op√ß√£o inv√°lida.\n");
         }
     }
     
